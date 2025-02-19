@@ -1,0 +1,26 @@
+{
+  "name": "gnmi-client",
+  "version": "1.0.0",
+  "description": "A JavaScript gNMI client for interacting with network devices using gRPC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/gnmi-client.git"
+  },
+  "keywords": [
+    "gnmi",
+    "grpc",
+    "networking",
+    "client"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.0",
+    "@grpc/proto-loader": "^0.7.0",
+    "events": "^3.3.0"
+  }
+}
