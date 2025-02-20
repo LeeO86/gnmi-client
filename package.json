@@ -22,5 +22,10 @@
     "@grpc/grpc-js": "^1.8.0",
     "@grpc/proto-loader": "^0.7.0",
     "events": "^3.3.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "gnmi.proto",
+    "gnmi_ext.proto"
+  ]
 }

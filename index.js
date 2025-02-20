@@ -1,8 +1,12 @@
 import grpc from '@grpc/grpc-js';
 import protoLoader from '@grpc/proto-loader';
 import { EventEmitter } from 'events';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const PROTO_PATH = 'gnmi.proto'; // Stelle sicher, dass du die gNMI-Protobuf-Datei hast
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const PROTO_PATH = path.join(__dirname, 'gnmi.proto');
 
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
   keepCase: true,
